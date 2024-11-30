@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our delicious menu: chicken, beef, and sushi by Food, LLC.">
+    <meta name="keywords" content="Chicken, Beef, Sushi, Food, Restaurant">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Food LLC - Menu</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&family=Dosis:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header Navigation -->
+    <header>
+        <nav id="header-nav" class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapsable-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand">
+                        <h1>Food, LLC</h1>
+                    </a>
+                </div>
+                <div id="menu-collapsable-nav" class="collapse navbar-collapse">
+                    <ul id="nav-list" class="nav navbar-nav navbar-right">
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Menu Section -->
+    <div class="container menu-container">
+        <h1 class="text-center main-title">Our Menu</h1>
+        <section id="menu" class="menu">
+            <div class="menu-item">
+                <h3>Chicken</h3>
+                <p>Delicious chicken dishes for every taste.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Beef</h3>
+                <p>Juicy steaks and classic beef dishes.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Sushi</h3>
+                <p>Fresh sushi and rolls made with traditional recipes.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Food, LLC. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        // Example JavaScript for interactivity
+        document.querySelectorAll('.menu-item').forEach(item => {
+            item.addEventListener('click', () => {
+                alert('You selected: ' + item.querySelector('h3').textContent);
+            });
+        });
+    </script>
+</body>
+
+</html>
